@@ -1,7 +1,7 @@
-const Discord = require('discord.js');
-const logger = require('winston');
+var Discord = require('discord.io');
+var logger = require('winston');
 var fs = require('fs');
-const bot = new Discord.Client();
+var bot = new Discord.Client();
 
 logger.remove(logger.transports.Console);
 logger.add(logger.transports.Console, {
@@ -17,9 +17,20 @@ bot.on('ready', function (evt) {
 });
 
 bot.on('message', function (user, userID, channelID, message ,evt) {
-	if (msg.content == '!ping') {
-        	msg.reply('Pong!')
-  	}
+	if(message.substring(0, 1) == '!') {
+		var args = message.substring(1).split(' ');
+		var cmd = args[0];
+		
+		args = args.splice(1);
+		switch(cmd) {
+			case 'ping':
+				bot.sendMessage({
+					to: channelID,
+					message: 'Pong!'
+				});
+			break;
+		}
+	}
 	if(user == 'Shadowdancer') {
 		if(message.substring(0, 1) == '@') {
 			var args = message.substring(1).split(' ');
