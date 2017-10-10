@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+var Discord = require('discord.js');
 var logger = require('winston');
 var fs = require('fs');
 const bot = new Discord.Client();
