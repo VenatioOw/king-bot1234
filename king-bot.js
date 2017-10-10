@@ -46,7 +46,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 				case 'everyone':
 					bot.sendMessage({
 						to: channelID,
-						message: 'The @King has spoken!'
+						message: 'The @KING has spoken!'
 					});
 				break;
 			}
@@ -62,7 +62,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 				case 'everyone':
 					bot.sendMessage({
 						to: channelID,
-							message: 'The @Queen has spoken!'
+							message: 'The @QUEEN(NOHOMO) has spoken!'
 					});
 				break;
 			}
