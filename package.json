@@ -4,6 +4,9 @@
   "description": "My own Discord bot",
   "main": "king-bot.js",
   "author": "Venatio",
+  "scripts": {
+    "start": "node king-bot.js"
+  },
   "dependencies": {
     "discord.io": "^2.5.3",
     "winston": "^2.4.0"
