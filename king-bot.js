@@ -1,5 +1,5 @@
-var Discord = require('discord.js');
-var logger = require('winston');
+const Discord = require('discord.js');
+const logger = require('winston');
 var fs = require('fs');
 const bot = new Discord.Client();
 
