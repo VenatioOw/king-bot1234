@@ -46,7 +46,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 				case 'everyone':
 					bot.sendMessage({
 						to: channelID,
-						message: 'The King has spoken!'
+						message: 'Suck A Dick!'
 					});
 				break;
 			}
