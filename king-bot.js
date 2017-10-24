@@ -110,7 +110,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 				case 'everyone':
 					bot.sendMessage({
 						to: channelID,
-							message: 'Daddy has spoken!'
+							message: 'Father has spoken!'
 					});
 				break;
 			}
