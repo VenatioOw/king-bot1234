@@ -121,6 +121,8 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 			channelID: channelID,
 			messageID: message.id,
 			reaction: ":grinning:"
+		}, function(err, res) {
+			if(err) {throw err; }
 		});
 	}
 });
