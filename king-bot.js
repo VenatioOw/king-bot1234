@@ -117,5 +117,12 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 		}
 	}
 	if(user == 'Venatio') {
-		bot.react(':starecat:');
+		bot.addReaction({
+			channelID: channelD,
+			messageID: event.d.id,
+			reaction: ":starecat:"
+		}, function(err, res) {
+			if(err) { throw err;}
+		});
+	}
 });
