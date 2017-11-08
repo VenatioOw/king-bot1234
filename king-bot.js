@@ -118,7 +118,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 	}
 	if(user == 'Venatio') {
 		bot.addReaction({
-			channelID: channelD,
+			channelID: channelID,
 			messageID: event.d.id,
 			reaction: ":starecat:"
 		}, function(err, res) {
