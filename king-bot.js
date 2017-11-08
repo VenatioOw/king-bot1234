@@ -120,9 +120,7 @@ bot.on('message', function (user, userID, channelID, message ,evt) {
 		bot.addReaction({
 			channelID: channelID,
 			messageID: message.id,
-			reaction: ":starecat:"
-		}, function(err, res) {
-			if(err) { throw err;}
+			reaction: ":grinning:"
 		});
 	}
 });
